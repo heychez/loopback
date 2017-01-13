@@ -678,7 +678,7 @@ module.exports = function(User) {
       query[tokenPK] = {neq: options.accessToken[tokenPK]};
     }
 
-    AccessToken.deleteAll(query, cb);
+    AccessToken.deleteAll(query, options, cb);
   };
 
   /*!
